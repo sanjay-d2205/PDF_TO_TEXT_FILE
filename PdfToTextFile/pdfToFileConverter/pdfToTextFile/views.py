@@ -24,9 +24,11 @@ def index(request):
         request.session['extractedText'] = '' 
         return response  
     return render(request,'base.html',{"showTextFile":showTextFile})
-
+    
 def textFileConverter(request):
+    text="" 
     return render(request,'base.html')
+
 
 def export_text_file(request):
     return render(request,'base.html')
